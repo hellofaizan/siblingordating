@@ -9,6 +9,8 @@ export const PostCard = ({ post, currentPost }: any) => {
   const [selectedOption, setSelectedOption] = useState("" as string);
   const [visible, setVisible] = useState(false);
 
+  console.log(post);
+
   const handleOptionChoose = () => {
     return (e: any) => {
       setSelectedOption(e.target.value);

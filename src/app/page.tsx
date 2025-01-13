@@ -1,5 +1,5 @@
 import ProfileCard from "@/components/card";
-import data from "../../data/profile.json";
+import data from "../../public/data/profile.json";
 
 export default function Home() {
   return (

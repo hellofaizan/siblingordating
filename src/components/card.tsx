@@ -6,6 +6,7 @@ import { PostCard } from "./postcard";
 import Link from "next/link";
 
 export default function ProfileCard({ data }: { data: any }) {
+  data.sort(() => Math.random() - 0.5);
   const [posts, setPosts] = useState(data);
   const [currentPost, setCurrentPost] = useState(0);
 
