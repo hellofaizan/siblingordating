@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.snapcdn.app",
+        hostname: "github.com",
       },
     ],
   },

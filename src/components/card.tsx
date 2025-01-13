@@ -42,7 +42,7 @@ export default function ProfileCard({ data }: { data: any }) {
           target="_blank"
           className="font-semibold font-sans"
         >
-          Mohammad Faizan
+          Faizaaaan
         </Link>{" "}
       </div>
     </div>

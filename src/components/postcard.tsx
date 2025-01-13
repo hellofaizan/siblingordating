@@ -26,13 +26,10 @@ export const PostCard = ({ post, currentPost }: any) => {
   return (
     <div className="flex flex-col w-full mt-2 mb-2">
       <div className="relative items-center justify-center">
-        <Image
+        <img
           src={post.image}
           className="w-full h-auto rounded-lg mb-2"
-          width={500}
-          height={500}
-          alt="Post Image"
-          priority
+          alt="Image"
         />
         {visible && (
           <h1
