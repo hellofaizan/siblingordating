@@ -52,7 +52,7 @@ export const PostCard = ({ post, currentPost }: any) => {
           ? `Yep! They are ${post.answer}`
           : `Nope! They are ${post.answer}`}
       </h2>
-      <div className="flex flex-row gap-2">
+      <div className={`flex-row gap-2 ${!visible ? "flex" : "hidden"}`}>
         <Button
           className="bg-green-500 dark:bg-green-500 hover:bg-green-600 dark:hover:bg-green-600 p-2 text-white dark:text-white rounded-md flex-1"
           value={"Sibling"}
