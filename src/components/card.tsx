@@ -27,7 +27,7 @@ export default function ProfileCard({ data }: { data: any }) {
     <div className="w-full gap-2">
       <p className="text-sm w-full text-center flex items-center gap-1">
         <TriangleAlert size={13} />
-        Needs faster internet for loading images
+        Images are very high quality, taking a little longer to load, Will compress images surely in a while
       </p>
       {posts.length > 0 && (
         <PostCard post={posts[currentPost]} currentPost={currentPost} />
