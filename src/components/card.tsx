@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { PostCard } from "./postcard";
 import Link from "next/link";
+import { TriangleAlert } from "lucide-react";
 
 export default function ProfileCard({ data }: { data: any }) {
   data.sort(() => Math.random() - 0.5);
@@ -24,6 +25,10 @@ export default function ProfileCard({ data }: { data: any }) {
 
   return (
     <div className="w-full gap-2">
+      <p className="text-sm w-full text-center flex items-center gap-1">
+        <TriangleAlert size={13} />
+        Needs faster internet for loading images
+      </p>
       {posts.length > 0 && (
         <PostCard post={posts[currentPost]} currentPost={currentPost} />
       )}
